@@ -23,6 +23,9 @@ Route::get('/', function () {
 Route::controller(AdminController::class)->group(function(){
     Route::prefix('admin')->group(function(){
         Route::get('/logout','destroy')->name('admin.logout');
+        Route::get('/profile','profile')->name('admin.profile');
+        Route::get('/edit-profile','editProfile')->name('admin.edit-profile');
+        Route::post('/store-profile','storeProfile')->name('admin.store-profile');
     });
 });
 
