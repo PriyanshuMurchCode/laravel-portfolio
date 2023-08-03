@@ -1,4 +1,4 @@
-@extends('admin.admin_master')
+@extends('admin.layouts.admin_master')
 @section('content')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <div class="page-content">
